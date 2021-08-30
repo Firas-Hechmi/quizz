@@ -1,0 +1,38 @@
+.quizz-box{
+    background-color: white;
+    margin: 0px auto;
+    width: 30%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+.quizz-title{
+    background-color:rgb(39, 39, 83) ;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 10% auto 0px auto;
+    width: 30%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+p{  
+   color:rgb(39, 39, 83);
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+.answer{
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.change{
+    color:rgb(39, 39, 83);
+   font-weight: bold;
+   text-align: center;
+}
+button{
+    background-color: rgb(39, 39, 83);
+    color: white;
+    padding: 3px;
+    width: 70px;
+}

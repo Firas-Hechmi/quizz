@@ -1,0 +1,18 @@
+
+<div class="quizz-title">
+    Quizz
+  </div>
+  <div class="quizz-box">
+    <form [formGroup]="quizzForm" (ngSubmit)="onSubmit()" *ngIf="!endQuizz">
+      <p>{{quizzElement.question}}</p>
+      <div class="answer" *ngFor="let suggestion of quizzElement.suggestions">
+       <input type="radio" [value]="suggestion" formControlName="answer">
+       <label>{{suggestion}}</label>
+      </div>
+      <div class="change">
+        <button type="button" style="border-radius:15px 0px 0px 15px ;" (click)="previous()">previous</button> {{index+1}}/{{size}} <button type="submit" style="border-radius:0px 15px 15px 0px ;" >next</button>
+      </div>
+    </form>
+    <p *ngIf="endQuizz">Score : {{score}}</p>
+  
+  </div>
